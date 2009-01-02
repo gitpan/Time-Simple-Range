@@ -1,0 +1,7 @@
+MANIFEST
+AUTHORS
+TODO
+ChangeLog
+lib/Time/Simple/Range.pm
+Makefile.PL
+META.yml                                 Module meta-data (added by MakeMaker)

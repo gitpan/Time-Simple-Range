@@ -1,0 +1,7 @@
+2009-01-02 Alessandro Zummo
+	* 1.1
+	* added stringify, = and bool overload
+	* added tests
+
+2008-12-09 Alessandro Zummo
+	* First release
