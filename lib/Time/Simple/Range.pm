@@ -8,7 +8,7 @@ use base qw/ Class::Accessor /;
 
 __PACKAGE__->mk_accessors(qw/ start end /);
 
-our $VERSION = '1.1'; 
+our $VERSION = '1.2'; 
 
 use overload
 	'fallback'	=> 1,
@@ -98,7 +98,8 @@ sub minutes
 {
 	my $self = shift;
 
-	return 0 unless defined $self->start
+	return 0
+		unless defined $self->start
 		and defined $self->end;
 
         return $self->duration->minutes;
@@ -107,7 +108,7 @@ sub minutes
 sub bool
 {
 	my $self = shift;
-	return defined $self->start && defined $self->end;
+	return (defined $self->start && defined $self->end);
 }
 
 sub stringify
@@ -152,7 +153,7 @@ A range of Time::Simple objects
 
 =head1 SEE ALSO
 
-Time::Simple, Time::Simple
+Time::Simple, Time::Seconds
 
 =head1 AUTHOR
 

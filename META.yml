@@ -1,8 +1,8 @@
 --- #YAML:1.0
 name:                Time-Simple-Range
-version:             1.1
+version:             1.2
 abstract:            A range of Time::Simple objects
-license:             ~
+license:             GPLv2
 author:              
     - Alessandro Zummo <a.zummo@towertech.it>
 generated_by:        ExtUtils::MakeMaker version 6.42
